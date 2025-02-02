@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "category": "PC",
+      "name": "Lenovo Y50-70",
+      "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGVub3ZvfGVufDB8fDB8fHww",
+      "quantity": 5,
+      "price": 25000
+    },
+    {
+      "id": "2",
+      "category": "Clothes",
+      "name": "Nike M&M DF Acg21",
+      "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fE5pa2V8ZW58MHx8MHx8fDA%3D",
+      "quantity": 22,
+      "price": 4000
+    },
+    {
+      "id": "3",
+      "category": "Plumbing",
+      "name": "CERSANIT MITO 17",
+      "image": "https://images.unsplash.com/photo-1552143233-c29bb1292978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBsdW1iaW5nfGVufDB8fDB8fHww",
+      "quantity": 137,
+      "price": 5000
+    },
+    {
+      "id": "4",
+      "category": "PC",
+      "name": "Lenovo Y50-70",
+      "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGVub3ZvfGVufDB8fDB8fHww",
+      "quantity": 5,
+      "price": 25000
+    },
+    {
+      "id": "5",
+      "category": "Clothes",
+      "name": "Nike M&M DF Acg21",
+      "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fE5pa2V8ZW58MHx8MHx8fDA%3D",
+      "quantity": 22,
+      "price": 4000
+    },
+    {
+      "id": "6",
+      "category": "Plumbing",
+      "name": "CERSANIT MITO 17",
+      "image": "https://images.unsplash.com/photo-1552143233-c29bb1292978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBsdW1iaW5nfGVufDB8fDB8fHww",
+      "quantity": 137,
+      "price": 5000
+    },
+    {
+      "id": 7,
+      "category": "sggagr",
+      "name": "rgwrtwhw",
+      "image": "https://placehold.co/345x140?text=No+Image",
+      "quantity": 2,
+      "price": 3333,
+      "description": ""
+    }
+  ]
+}
