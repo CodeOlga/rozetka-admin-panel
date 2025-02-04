@@ -7,6 +7,7 @@ import { history } from "./redux/store";
 
 import Layout from "./components/Layout/Layout";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router history={history}>
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route element={<Login />} path="/login" />
             <Route element={<PrivateRoute />}>
               {Object.keys(routes).map((item) => (
                 <Route
