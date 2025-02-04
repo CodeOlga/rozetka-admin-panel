@@ -1,9 +1,11 @@
 import { takeEvery } from "redux-saga/effects";
+
 import productsAsyncAction from "./asyncAction";
 import {
   callGetProductsWorker,
   callDeleteProductWorker,
   callAddProductWorker,
+  callEditProductWorker,
 } from "./workers";
 
 export function* productsWatcher() {
@@ -18,5 +20,9 @@ export function* productsWatcher() {
   yield takeEvery(
     productsAsyncAction.addProductAction.type,
     callAddProductWorker
+  );
+  yield takeEvery(
+    productsAsyncAction.editProductAction.type,
+    callEditProductWorker
   );
 }

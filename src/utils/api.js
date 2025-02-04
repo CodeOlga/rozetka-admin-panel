@@ -1,5 +1,5 @@
 import axios from "axios";
-// import { API_URL } from "../constants/api";
+
 const API_URL = import.meta.env.VITE_API_URL;
 
 console.log(API_URL);
@@ -17,11 +17,9 @@ const api = {
   addProduct(productData) {
     return instance.post("/products", productData);
   },
-  // getHotels(params) {
-  //   return instance.get("hotels", {
-  //     params,
-  //   });
-  // },
+  editProduct(productData) {
+    return instance.put(`/products/${productData.id}`, productData);
+  },
 };
 
 export default api;

@@ -1,10 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import { HistoryRouter as Router } from "redux-first-history/rr6";
+import { Box } from "@mui/material";
+
 import { routes } from "./constants/routes";
 import { history } from "./redux/store";
+
 import Layout from "./components/Layout/Layout";
-import { Box } from "@mui/material";
-import PrivateRoute from "../src/components/PrivateRoute/PrivateRoute";
+// import PrivateRoute from "../src/components/PrivateRoute/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+
 function App() {
   return (
     <Box sx={{ backgroundColor: "primary.main" }}>
@@ -19,9 +23,6 @@ function App() {
                   path={routes[item].path}
                 />
               ))}
-              {/* {Object.values(routes).map(({ path, element, id }) => (
-            <Route key={id} path={path} element={element} />
-          ))} */}
             </Route>
           </Route>
         </Routes>
