@@ -1,9 +1,11 @@
+import { Provider } from "react-redux";
 import { Outlet, useLocation } from "react-router-dom";
 import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
-import Header from "../Header/Header";
+
 import theme from "../../theme";
-import { Provider } from "react-redux";
 import { store } from "../../redux/store";
+
+import Header from "../Header/Header";
 
 const Layout = () => {
   const location = useLocation();

@@ -6,7 +6,6 @@ import { routes } from "./constants/routes";
 import { history } from "./redux/store";
 
 import Layout from "./components/Layout/Layout";
-// import PrivateRoute from "../src/components/PrivateRoute/PrivateRoute";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {

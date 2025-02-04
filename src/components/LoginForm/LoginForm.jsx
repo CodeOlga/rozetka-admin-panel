@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Box,
   Button,
@@ -9,22 +10,12 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import { Field, Form } from "react-final-form";
 import { func } from "prop-types";
-import { useState } from "react";
+
 import {
   isRequired,
   minLength2,
   passwordValidation,
 } from "../../validators/validators";
-
-// const required = (value) => (value ? undefined : "Required");
-
-// const minLength2 = (value) =>
-//   value && value.length >= 2 ? undefined : "Must be at least 2 characters";
-
-// const passwordValidation = (value) =>
-//   value && value.length >= 6
-//     ? undefined
-//     : "Password must be at least 6 characters";
 
 const LoginForm = ({ onSubmit }) => {
   const [showPassword, setShowPassword] = useState(false);

@@ -1,7 +1,8 @@
 import { Box, CircularProgress } from "@mui/material";
-import { usePreview } from "./hooks/usePreview";
-// import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+
+import { usePreview } from "./hooks/usePreview";
+
 import ProductItem from "../../components/ProductItem/ProductItem";
 
 const Preview = () => {
@@ -33,13 +34,6 @@ const Preview = () => {
               key={product.id}
               sx={{ height: "100%" }}
             >
-              {/* <ProductItem
-                category={product.category}
-                name={product.name}
-                quantity={product.quantity}
-                price={product.price}
-                image={product.image}
-              /> */}
               <ProductItem {...product} />
             </Grid>
           ))}

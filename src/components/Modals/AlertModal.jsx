@@ -38,8 +38,8 @@ const AlertModal = ({ open, handleClose, handleDelete }) => {
         </Button>
         <Button
           onClick={() => {
-            handleDelete(); // Удаляем продукт
-            handleClose(); // Закрываем модальное окно
+            handleDelete();
+            handleClose();
           }}
           variant="outlined"
           sx={{

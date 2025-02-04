@@ -8,10 +8,10 @@ import logo from "../../assets/logo-green.svg";
 import LoginForm from "../../components/LoginForm/LoginForm";
 
 const Login = () => {
-  const navigate = useNavigate();
-
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
 
   const onSubmit = (formData) => {
     setIsLoading(true);
@@ -25,15 +25,13 @@ const Login = () => {
       );
 
       if (user) {
-        const token = btoa(user.name); // Простой токен
-        // console.log("Token:", token);
-        localStorage.setItem("token", token); // Сохраняем токен
+        const token = btoa(user.name);
+        localStorage.setItem("token", token);
 
         navigate("/products");
       } else {
         setError("Incorrect username or password");
       }
-
       setIsLoading(false);
     }, 2000);
   };
